@@ -377,3 +377,24 @@ footer {
     text-align: center;
   }
 }
+
+footer {
+  @include boxBase;
+  color: $gray;
+  p {
+    text-align: center;
+  }
+}
+
+.search-form {
+  text-align: center;
+  padding-top: 32px;
+  .search-input {
+    width: 30%;
+    margin-right: 10px;
+  }
+
+  .search-btn {
+    width: 10%;
+  }
+}

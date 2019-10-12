@@ -1,12 +1,10 @@
 <div class="contents row">
   <div class="container">
-    <%= form_tag('/tweets', method: :post) do %>
+    <%= form_with(model: @tweet, local: true) do |form| %>
       <h3>
         投稿する
       </h3>
-      <input placeholder="Image Url" type="text" name="image">
-      <textarea cols="30" name="text" placeholder="text" rows="10"></textarea>
-      <input type="submit" value="SENT">
+      <%= render partial: "form", locals: { form: form } %>
     <% end %>
   </div>
 </div>
